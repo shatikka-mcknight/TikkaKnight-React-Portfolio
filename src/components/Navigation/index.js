@@ -1,24 +1,23 @@
-import React from 'react';
+import React from "react";
+import Nav from "react-bootstrap/Nav";
 
 const Navigation = () => {
-  
   return (
-    <Nav className="justify-content-end" activeKey="/home">
-    <Nav.Item>
-      <Nav.Link href="/home">Active</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-1">Link</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-2">Link</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="disabled" disabled>
-        Disabled
-      </Nav.Link>
-    </Nav.Item>
-  </Nav>
+    <Nav className="justify-content-center main-header" id="navbar">
+     
+      <Nav.Item  >
+        <Nav.Link >About Me</Nav.Link>
+      </Nav.Item>
+      <Nav.Item >
+        <Nav.Link >Projects</Nav.Link>
+      </Nav.Item>
+      <Nav.Item >
+        <Nav.Link>Resume</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link>Contact Me</Nav.Link>
+      </Nav.Item>
+    </Nav>
   );
 };
 
